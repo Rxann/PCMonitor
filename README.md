@@ -1,6 +1,7 @@
 PCMonitor - Discord Rich Presence
 PCMonitor is a tool to display your real time computer's stats onto your Discord Profile!
 Please read the requirements.txt and install the needed pip packages for PCMonitor to work!
+If you don't trust downloading a random file off of Github I totally understand, here is a virus total scan: https://www.virustotal.com/gui/file/74308d173bafedd1150f8c9d24d599d81fd8354f6a64ae9627c492c05929460e/detection
 
     How to install and use PCMonitor
 1. Download the ZIP file from the Code dropdown menu
