@@ -14,3 +14,4 @@ PCMonitor is a tool to display your real time computer's stats onto your discord
         Notes:
  You must keep command prompt open or the program will close.  
  If you have any questions or issues please make an issue on the repository.
+ Discord MUST be running for the program to start up or you will get an error message.
