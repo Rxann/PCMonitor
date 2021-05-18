@@ -2,19 +2,22 @@
 import psutil
 from pypresence import Presence
 import time
+import os
 
-client_id = '841705865303162910'  # Fake ID, put your real one here
-RPC = Presence(client_id,pipe=0)  # Initialize the client class
-RPC.connect() # Start the handshake loop
+pcmonitor_id = os.getenv('discord_client_id')
+
+client_id = pcmonitor_id
+RPC = Presence(client_id,pipe=0)  
+RPC.connect() 
 
 print("PCMonitor has been enabled!")
 
 
 
-while True:  # The presence will stay on as long as the program is running
-    cpu_per = round(psutil.cpu_percent(),1) # Get CPU Usage
+while True: 
+    cpu_per = round(psutil.cpu_percent(),1) 
     
     mem = psutil.virtual_memory()
     mem_per = round(psutil.virtual_memory().percent,1)
-    RPC.update(details="RAM: "+str(mem_per)+"%", state="CPU: "+str(cpu_per)+"%")  # Set the presence
-    time.sleep(5) # Can only update rich presence every 5 seconds
+    RPC.update(details="RAM: "+str(mem_per)+"%", state="CPU: "+str(cpu_per)+"%")  
+    time.sleep(5) 
