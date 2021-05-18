@@ -6,7 +6,7 @@ import os
 
 pcmonitor_id = os.getenv('discord_client_id')
 
-client_id = pcmonitor_id
+client_id = '841705865303162910'
 RPC = Presence(client_id,pipe=0)  
 RPC.connect() 
 
